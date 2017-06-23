@@ -1,0 +1,28 @@
+/* Stylesheet for Jupyter Notebook */
+@charset "UTF-8";
+
+/* MathJax fixes */
+.math br {
+    clear: both !important;
+}
+
+/* Source: https://github.com/dunovank/jupyter-themes */
+.MathJax_Display,
+.MathJax nobr>span.math>span {
+    border: 0 !important;
+    text-align: center !important;
+    margin: 0em !important;
+}
+/* Prevents MathJax from jittering */
+/* cell position when cell is selected */
+.MathJax:focus, body :focus .MathJax {
+    display: inline-block !important;
+}
+
+<script>
+    MathJax.Hub.Config({
+        "HTML-CSS": {
+            availableFonts: ["TeX", "STIX"],
+        }
+    });
+</script>
