@@ -1,0 +1,9 @@
+# Required Python packages on PyPI
+jupyter
+numpy
+pillow
+matplotlib
+pandas
+tqdm
+tensorflow
+keras
